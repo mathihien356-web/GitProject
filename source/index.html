@@ -3,75 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danh sách sản phẩm</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 30px;
-            background-color: #f5f5f5;
-        }
-
-        h1 {
-            text-align: center;
-            color: #333333;
-        }
-
-        table {
-            width: 100%;
-            max-width: 800px;
-            margin: 20px auto;
-            border-collapse: collapse;
-            background-color: white;
-        }
-
-        th, td {
-            border: 1px solid #cccccc;
-            padding: 12px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #e2e2e2;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-    </style>
+    <title>Thực hành danh sách trong CSS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Danh sách sản phẩm</h1>
+    <h1>Thực hành danh sách trong CSS</h1>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Tên sản phẩm</th>
-                <th>Giá</th>
-                <th>Số lượng</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Laptop Dell</td>
-                <td>15.000.000 VNĐ</td>
-                <td>10</td>
-            </tr>
-            <tr>
-                <td>Chuột không dây</td>
-                <td>250.000 VNĐ</td>
-                <td>30</td>
-            </tr>
-            <tr>
-                <td>Bàn phím cơ</td>
-                <td>850.000 VNĐ</td>
-                <td>15</td>
-            </tr>
-            <tr>
-                <td>Màn hình máy tính</td>
-                <td>3.500.000 VNĐ</td>
-                <td>8</td>
-            </tr>
-        </tbody>
-    </table>
+    <section>
+        <h2>1. Danh sách môn học</h2>
+        <ul class="subjects">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Git</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>2. Các bước học lập trình</h2>
+        <ol class="steps">
+            <li>Học HTML</li>
+            <li>Học CSS</li>
+            <li>Học JavaScript</li>
+            <li>Học Git</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>3. Công cụ học tập</h2>
+        <ul class="tools">
+            <li>Visual Studio Code</li>
+            <li>Google Chrome</li>
+            <li>GitHub</li>
+            <li>Git</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>4. So sánh vị trí dấu đánh dấu</h2>
+        <h3>Outside</h3>
+        <ul class="outside">
+            <li>Đây là mục danh sách có nội dung dài để quan sát vị trí dấu đánh dấu khi văn bản xuống dòng.</li>
+            <li>HTML</li>
+        </ul>
+
+        <h3>Inside</h3>
+        <ul class="inside">
+            <li>Đây là mục danh sách có nội dung dài để quan sát vị trí dấu đánh dấu khi văn bản xuống dòng.</li>
+            <li>HTML</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>5. Thuộc tính rút gọn list-style</h2>
+        <ul class="shorthand">
+            <li>Học cấu trúc HTML</li>
+            <li>Trang trí bằng CSS</li>
+            <li>Thêm tương tác bằng JavaScript</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>6. Danh sách ngôn ngữ lập trình</h2>
+        <ul class="languages">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>7. Lộ trình học lập trình Web</h2>
+        <ol class="roadmap">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Git</li>
+            <li>GitHub</li>
+        </ol>
+    </section>
 </body>
 </html>

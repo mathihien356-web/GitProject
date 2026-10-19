@@ -1,0 +1,84 @@
+﻿body {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #263238;
+    background-color: #f5f7fa;
+}
+
+h1 {
+    color: #245b80;
+    text-align: center;
+}
+
+section {
+    margin: 24px 0;
+    padding: 18px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #245b80;
+}
+
+/* 1. list-style-type */
+.subjects {
+    list-style-type: square;
+}
+
+/* 2. Số La Mã viết hoa */
+.steps {
+    list-style-type: upper-roman;
+}
+
+/* 3. Hình ảnh làm dấu đánh dấu.
+   Emoji không dùng ở đây; hình ảnh được tạo bằng SVG cục bộ. */
+.tools {
+    list-style-image: url("list-marker.svg");
+}
+
+/* 4. Vị trí dấu đánh dấu */
+.outside {
+    list-style-position: outside;
+    max-width: 350px;
+}
+
+.inside {
+    list-style-position: inside;
+    max-width: 350px;
+}
+
+/* 5. Thuộc tính rút gọn: kiểu, vị trí, hình ảnh */
+.shorthand {
+    list-style: square inside url("list-marker.svg");
+}
+
+/* 6. Màu sắc và khoảng cách */
+.languages {
+    list-style-type: circle;
+    background-color: #e4f2ff;
+    color: #174b70;
+    padding: 20px 20px 20px 45px;
+    border-radius: 6px;
+}
+
+.languages li {
+    margin: 8px 0;
+}
+
+/* 7. Bài tập tổng hợp */
+.roadmap {
+    list-style: upper-roman inside;
+    background-color: #e7f5ec;
+    color: #205c3b;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.roadmap li {
+    margin: 8px 0;
+    padding: 5px;
+}
