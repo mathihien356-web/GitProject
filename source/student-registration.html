@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký học viên</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef2f7;
+            margin: 0;
+            padding: 30px 15px;
+            color: #263445;
+        }
+        .container {
+            max-width: 650px;
+            margin: auto;
+            padding: 28px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 14px #d0d7e0;
+        }
+        h2 {
+            text-align: center;
+            color: #2457a7;
+            margin-top: 0;
+        }
+        .field {
+            margin-bottom: 16px;
+        }
+        .field > label, .field > .field-title {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 7px;
+        }
+        input[type="text"], input[type="email"], input[type="tel"],
+        input[type="date"], select, textarea {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #bdc7d3;
+            border-radius: 5px;
+            font: inherit;
+        }
+        textarea {
+            min-height: 85px;
+            resize: vertical;
+        }
+        .options label {
+            display: inline-block;
+            margin: 4px 14px 4px 0;
+            font-weight: normal;
+        }
+        .buttons {
+            display: flex;
+            gap: 12px;
+            margin-top: 22px;
+        }
+        input[type="submit"], input[type="reset"] {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+        input[type="submit"] {
+            background: #2457a7;
+            color: white;
+        }
+        input[type="reset"] {
+            background: #e0e5eb;
+            color: #263445;
+        }
+        input[type="submit"]:hover {
+            background: #183f7d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>FORM ĐĂNG KÝ HỌC VIÊN</h2>
+
+        <form action="#" method="get">
+            <div class="field">
+                <label for="fullname">Họ và tên</label>
+                <input type="text" id="fullname" name="fullname"
+                       placeholder="Nhập họ và tên" required>
+            </div>
+
+            <div class="field">
+                <label for="student-email">Email</label>
+                <input type="email" id="student-email" name="email"
+                       placeholder="example@email.com" required>
+            </div>
+
+            <div class="field">
+                <label for="phone">Số điện thoại</label>
+                <input type="tel" id="phone" name="phone"
+                       placeholder="Nhập số điện thoại" required>
+            </div>
+
+            <div class="field">
+                <label for="birthday">Ngày sinh</label>
+                <input type="date" id="birthday" name="birthday">
+            </div>
+
+            <div class="field">
+                <span class="field-title">Giới tính</span>
+                <div class="options">
+                    <label><input type="radio" name="gender" value="Nam"> Nam</label>
+                    <label><input type="radio" name="gender" value="Nữ"> Nữ</label>
+                    <label><input type="radio" name="gender" value="Khác"> Khác</label>
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="address">Địa chỉ</label>
+                <textarea id="address" name="address"
+                          placeholder="Nhập địa chỉ"></textarea>
+            </div>
+
+            <div class="field">
+                <label for="course">Khóa học</label>
+                <select id="course" name="course" required>
+                    <option value="">-- Chọn khóa học --</option>
+                    <option value="HTML & CSS">HTML &amp; CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Java">Java</option>
+                    <option value="Python">Python</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <span class="field-title">Hình thức học</span>
+                <div class="options">
+                    <label><input type="radio" name="study_type" value="Online"> Online</label>
+                    <label><input type="radio" name="study_type" value="Offline"> Offline</label>
+                </div>
+            </div>
+
+            <div class="field">
+                <span class="field-title">Sở thích</span>
+                <div class="options">
+                    <label><input type="checkbox" name="hobby" value="Đọc sách"> Đọc sách</label>
+                    <label><input type="checkbox" name="hobby" value="Du lịch"> Du lịch</label>
+                    <label><input type="checkbox" name="hobby" value="Thể thao"> Thể thao</label>
+                    <label><input type="checkbox" name="hobby" value="Âm nhạc"> Âm nhạc</label>
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="note">Ghi chú</label>
+                <textarea id="note" name="note"
+                          placeholder="Thông tin bổ sung (nếu có)"></textarea>
+            </div>
+
+            <div class="buttons">
+                <input type="submit" value="Đăng ký">
+                <input type="reset" value="Nhập lại">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
